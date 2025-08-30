@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Andrew Yancey | Web Developer</title>
+  <style>
+    /* Reset & base styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(135deg, #1d3557, #457b9d);
+      color: #f1faee;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      font-weight: normal;
+      color: #a8dadc;
+      margin-bottom: 2rem;
+    }
+
+    .construction {
+      font-size: 1rem;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 1rem 1.5rem;
+      border-radius: 8px;
+      border: 1px solid #f1faee;
+      margin-bottom: 2rem;
+    }
+
+    footer {
+      font-size: 0.9rem;
+      color: #f1faee;
+      opacity: 0.8;
+    }
+  </style>
+</head>
+<body>
+  <h1>Hi, I'm Andrew Yancey</h1>
+  <h2>Aspiring Web Developer</h2>
+  <p class="construction">
+    🚧 This site is currently under construction. 🚧<br>
+    I'm building my portfolio — check back soon!
+  </p>
+  <footer>
+    © <span id="year"></span> Andrew Yancey. All rights reserved.
+  </footer>
+
+  <script>
+    // Auto-update footer year
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
