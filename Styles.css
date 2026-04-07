@@ -14,11 +14,9 @@ body {
 }
 
 .header h1,
-.header h2,
-.header h3 {
+.header h2 {
     color: var(--primary-color);
     margin: 0;
-    padding: 0;
 }
 
 .header h1 {
@@ -44,7 +42,6 @@ body {
 
 .header-info {
     display: flex;
-    flex-direction: row;
     align-items: center;
     height: 100%;
     margin: .5rem;
@@ -105,7 +102,6 @@ main {
 .offer-title {
     color: var(--primary-color);
     margin-top: 4rem;
-    padding: 0;
     font-family: var(--primary-font);
     text-align: center;
 }
@@ -113,7 +109,6 @@ main {
 .offer-text {
     color: var(--primary-color);
     margin-bottom: 2rem;
-    padding: 0;
     font-family: var(--primary-font);
     font-size: 20px;
     font-weight: 200;
@@ -132,8 +127,6 @@ main {
     border: 2px solid var(--accent-color);
     border-radius: 8%;
     overflow: hidden;
-    top: 0;
-    left: 50%;
 }
 
 .carousel-image:nth-child(1) {
@@ -154,7 +147,6 @@ main {
 @media (max-width: 1000px) {
     .header {
         grid-template-columns: 50% 50%;
-        grid-template-rows: 100%;
     }
 
     .carousel-image:nth-child(1),
@@ -184,10 +176,5 @@ main {
         display: flex;
         flex-direction: column;
         height: auto;
-    }
-
-    .header-portrait {
-        height: 72px;
-        width: 72px;
     }
 }
