@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Andrew Yancey | Web Developer</title>
+  <link rel="icon" href="./Assets/favicon.png">
   <link href="./styles.css" rel="stylesheet" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,11 +27,11 @@
     <div class="header-actions">
       <div class="actions-container">
         <nav class="nav">
-          <a href="#">ABOUT</a>
-          <a href="#">SKILLS</a>
-          <a href="#">PROJECTS</a>
+          <a href="#about-me">ABOUT</a>
+          <a href="#skills">SKILLS</a>
+          <a href="https://www.andrewyancey.com/forecast-app/">PROJECTS</a>
         </nav>
-        <a class="cta-button" href="#">GET IN TOUCH</a>
+        <button class="cta-button" onclick="handleContactClick(event);">GET IN TOUCH</button>
       </div>
     </div>
   </header>
@@ -48,7 +49,7 @@
         <img src="./Assets/ownsite.png" class="carousel-image" alt="A picture of a webpage" />
       </div>
     </section>
-    <section class="about">
+    <section class="about" id="about-me">
       <h2 class="about-title">About Me</h2>
       <p class="about-text">
         I bring over 20 years of programming experience and business management experience to every project, with a core
@@ -59,22 +60,62 @@
         business goals.
       </p>
     </section>
-    <div class="overlay">
-      <div class="contact-box">
-        <form class="contact-me">
-          <h2>Let's get in touch!</h2>
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required/>
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required/>
-          <label for="message">Message:</label>
-          <textarea id="message" name="message"></textarea>
-          <input type="submit" id="submit"/>
-        </form>
+    <section class="skills" id="skills">
+      <h2 class="Skills-title">Skills</h2>
+      <div class="skills-container">
+        <span class="skill">HTML</span>
+        <span class="skill">CSS</span>
+        <span class="skill">JAVASCRIPT</span>
+        <span class="skill">C#</span>
+        <span class="skill">C++</span>
+        <span class="skill">SQL</span>
+        <span class="skill">WEB DESIGN</span>
+        <span class="skill">UNITY</span>
+        <span class="skill">GAME DEVELOPMENT</span>
+        <span class="skill">RESPONSIVE DESIGN</span>
+        <span class="skill">API INTEGRATION</span>
+        <span class="skill">GIT / GITHUB</span>
+        <span class="skill">FORM HANDLING</span>
+        <span class="skill">GITHUB PAGES</span>
+        <span class="skill">DATA STRUCTURES</span>
+        <span class="skill">ALGORITHMS</span>
+        <span class="skill">DEBUGGING</span>
+        <span class="skill">NODE.JS</span>
+        <span class="skill">EXPRESS</span>
+        <span class="skill">ACCESSIBILITY</span>
+        <span class="skill">SEO</span>
+        <span class="skill">DATABASE DESIGN</span>
+        <span class="skill">.NET DEVELOPMENT</span>
+        <span class="skill">WPF APPLICATIONS</span>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <p>&copy; 2026 Andrew Yancey. All rights reserved.</p>
+  </footer>
+  <div class="overlay hidden" onclick="handleContactOverlayClick(event);">
+    <div class="contact-box" role="dialog" aria-modal="true" aria-labelledby="contact-title">
+      <form class="contact-me" action="https://formspree.io/f/mbdwzkzg" method="POST">
+        <h2 id="contact-title">Let's get in touch!</h2>
+        <label for="name">Name:</label>
+        <input type="text" id="name" class="contact-field" name="name" required />
+        <label for="email">Email:</label>
+        <input type="email" id="email" class="contact-field" name="email" required />
+        <label for="message">Message:</label>
+        <textarea id="message" class="contact-field" name="message"></textarea>
+        <div class="contact-buttons">
+          <input type="submit" id="submit" class="contact-button"/>
+          <button type="button" class="contact-button close-button" aria-label="Close Contact Form"
+            onclick="hideContactBox();">Close</button>
+        </div>
+      </form>
+      <div class="thanks-box hidden">
+        <h2>Thank you for your submission!</h2>
+        <p>I will be in touch soon.</p>
       </div>
     </div>
-  </main>
-
+  </div>
+  <script src="index.js"></script>
 </body>
 
 </html>
