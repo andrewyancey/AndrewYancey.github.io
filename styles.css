@@ -102,6 +102,7 @@ body {
     align-items: center;
     flex-direction: column;
     min-height: calc(100svh - 130px);
+    padding-bottom: 1.5rem;
 }
 
 .offer-title {
