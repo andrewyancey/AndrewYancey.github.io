@@ -9,9 +9,9 @@ function showContactBox() {
 }
 
 function hideContactBox() {
-        if (!contactOverlay.classList.contains("hidden")) {
-            contactOverlay.classList.add("hidden");
-        }
+    if (!contactOverlay.classList.contains("hidden")) {
+        contactOverlay.classList.add("hidden");
+    }
 }
 
 function handleContactClick(event) {
@@ -24,13 +24,12 @@ function handleContactOverlayClick(event) {
     }
 }
 
-function handleKeyPress(event)
-{
-    if(event.key === "Escape") handleEscapeKey(event);
+function handleKeyPress(event) {
+    if (event.key === "Escape") handleEscapeKey(event);
 }
 
 function handleEscapeKey(event) {
-    if(!contactOverlay.classList.contains("hidden")) {
+    if (!contactOverlay.classList.contains("hidden")) {
         hideContactBox();
     }
 }
