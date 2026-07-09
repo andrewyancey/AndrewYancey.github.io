@@ -275,6 +275,38 @@ img {
     gap: 1rem;
 }
 
+.preview-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.preview-modal {
+    background-color: rgba(30, 30, 30, .90);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 132px;
+}
+
+.preview-modal h2 {
+    font-family: var(--secondary-font);
+    color: var(--primary-color);
+    font-size: 36px;
+}
+
+.preview-modal a {
+    font-family: var(--primary-font);
+    color: var(--primary-color);
+    font-size: 16px;
+}
+
 @keyframes fade-in {
 
     from {
