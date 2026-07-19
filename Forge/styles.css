@@ -117,6 +117,7 @@ img {
     background-color: var(--bg-color);
     border: solid 1px var(--primary-color);
     padding: 13px 20px 13px 20px;
+    cursor: pointer;
 }
 
 .header-address {
