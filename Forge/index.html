@@ -17,8 +17,6 @@
     <section class="hero">
         <header class="header">
             <div class="header-grid">
-                <!-- empty grid col 1 -->
-                <!-- gird col 2 contains all of this below, this is what I am asking about -->
                 <div class="header-content">
                     <h1>FORGE</h1>
                     <h2>Professional mobile vehicle detailing</h2>
@@ -32,8 +30,6 @@
                     </nav>
                     <button class="cta-button">Get a Free Quote</button>
                 </div>
-                <!-- end what I am asking about -->
-                <!--the last grid col  -->
                 <div class="header-address">
                     <address class="address">123 Address Rd, Lexington, Ky 40515</address>
                 </div>
@@ -78,8 +74,112 @@
             </div>
         </div>
     </section>
-
-    <script src=" "></script>
+    <section class="services">
+        <div class="service-box">
+            <h2 class="service-title">SERVICES & ADD-ONS</h2>
+            <div class="service-accordion">
+                <div class="accordion-item">
+                    <h3>
+                        <button class="accordion-trigger" type="button" aria-expanded="false"
+                            aria-controls="express-wash-content">
+                            <span class="accordion-title">Express Wash</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="accordion-icon" viewBox="0 0 16 16" aria-hidden="true">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z" />
+                            </svg>
+                        </button>
+                    </h3>
+                    <div class="accordion-content" id="express-wash-content" hidden>
+                        <p>A quick exterior refresh that includes a hand wash, wheel and tire cleaning, and a
+                            streak-free dry to restore a clean, polished finish.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h3>
+                        <button class="accordion-trigger" type="button" aria-expanded="false"
+                            aria-controls="interior-detail-content">
+                            <span class="accordion-title">Full Interior Detail</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="accordion-icon" viewBox="0 0 16 16" aria-hidden="true">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z" />
+                            </svg>
+                        </button>
+                    </h3>
+                    <div class="accordion-content" id="interior-detail-content" hidden>
+                        <p>A thorough cabin cleaning with vacuuming, surface sanitizing, carpet and upholstery
+                            treatment, window cleaning, and careful detailing of cracks and crevices.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h3>
+                        <button class="accordion-trigger" type="button" aria-expanded="false"
+                            aria-controls="premium-detail-content">
+                            <span class="accordion-title">Premium Detail Package</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="accordion-icon" viewBox="0 0 16 16" aria-hidden="true">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z" />
+                            </svg>
+                        </button>
+                    </h3>
+                    <div class="accordion-content" id="premium-detail-content" hidden>
+                        <p>Our complete interior and exterior service combines a deep cabin clean with a careful
+                            hand wash, paint decontamination, protective finish, and detailed wheel treatment.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h3>
+                        <button class="accordion-trigger" type="button" aria-expanded="false"
+                            aria-controls="add-ons-content">
+                            <span class="accordion-title">Add-ons</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="accordion-icon" viewBox="0 0 16 16" aria-hidden="true">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z" />
+                            </svg>
+                        </button>
+                    </h3>
+                    <div class="accordion-content" id="add-ons-content" hidden>
+                        <ul class="add-on-list">
+                            <li><span>Pet Hair Removal</span><span>$35</span></li>
+                            <li><span>Headlight Restoration</span><span>$50</span></li>
+                            <li><span>Engine Bay Cleaning</span><span>$45</span></li>
+                            <li><span>Odor Elimination</span><span>$30</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <h2>FORGE</h2>
+                <p>Professional mobile vehicle detailing</p>
+            </div>
+            <nav class="footer-nav" aria-label="Footer navigation">
+                <ul>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Guides</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </nav>
+            <div class="footer-contact">
+                <address>123 Address Rd, Lexington, Ky 40515</address>
+                <a href="#">Get a Free Quote</a>
+            </div>
+        </div>
+    </footer>
+    <div class="preview-overlay">
+        <div class="preview-modal">
+            <h2>Viewing the FORGE webpage demo.</h2>
+            <a href="#">Click here to return to the home page</a>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
