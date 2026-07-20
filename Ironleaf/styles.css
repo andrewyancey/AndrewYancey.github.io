@@ -1,0 +1,100 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --bg-color: #F5F7F6;
+    --primary-color: #1E1E1E;
+    --accent-color: #4CAF50;
+    --accent-dark-color: #1F7A4C;
+    --primary-font: "Lato";
+}
+
+.hero {
+    min-height: 100svh;
+    background-image: url("./Assets/bg.jpg");
+    background-size: cover;
+    background-position: cover;
+}
+
+.header {
+    width: 100%;
+}
+
+.top-header {
+    width: 100%;
+    min-height: 135px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    justify-items: center;
+    align-items: center;
+    background-color: var(--bg-color);
+}
+
+.title {
+    color: var(--primary-color);
+    font-size: 48px;
+    font-family: var(--primary-font);
+}
+
+.header-nav>ul {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    list-style: none;
+}
+
+.header-nav a,
+.header-nav a:visited {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 32px;
+    font-family: var(--primary-font);
+}
+
+.header-nav a:hover {
+    border-bottom: 3px solid var(--accent-color);
+}
+
+.header-cta-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cta-phonenumber {
+    color: var(--primary-color);
+    font-size: 20px;
+    font-family: var(--primary-font);
+}
+
+.cta-button {
+    width: 216px;
+    height: 56px;
+    background-color: var(--accent-color);
+    border: 1px solid var(--accent-dark-color);
+    color: var(--bg-color);
+    font-size: 32px;
+    font-family: var(--primary-font);
+}
+
+.bottom-header {
+    height: 28px;
+    background-color: var(--accent-color);
+    border-top: 2px solid var(--accent-dark-color);
+    border-bottom: 2px solid var(--accent-dark-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom-header>h2 {
+    font-size: 20px;
+    color: var(--primary-color);
+    font-family: var(--primary-font);
+}
