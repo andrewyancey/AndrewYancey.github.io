@@ -5,7 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta name="description" content="Andrew Yancey builds fast, professional static websites for small businesses, personal brands, and startups.">
+  <meta name="description"
+    content="Andrew Yancey builds fast, professional static websites for small businesses, personal brands, and startups.">
   <meta name="canonical" href="https://www.andrewyancey.com/">
 
   <meta name="og:title" content="Andrew Yancey | Web Developer">
@@ -53,10 +54,16 @@
         businesses, personal brands, and startups that need an online presence without the complexity or high cost. This
         is a limited time offer while I expand my portfolio, so schedule your free consultation now!
       </p>
-      <div class="carousel">
-        <img src="./Assets/ironshield.PNG" class="carousel-image" alt="A picture of a pest control website" />
-        <img src="./Assets/landscaping.png" class="carousel-image" alt="A picture of a landscaping website" />
-        <img src="./Assets/forge.png" class="carousel-image" alt="A picture of a development website" />
+      <div class="carousel" >
+        <a href="#" class="carousel-link">
+          <img src="./Assets/ironshield.PNG" class="carousel-image" alt="A picture of a pest control website" />
+        </a>
+        <a href="./Ironleaf/" class="carousel-link">
+          <img src="./Assets/landscaping.png" class="carousel-image" alt="A picture of a landscaping website" />
+        </a>
+        <a href="./Forge/" class="carousel-link">
+          <img src="./Assets/forge.png" class="carousel-image" alt="A picture of a development website" />
+        </a>
       </div>
     </section>
     <section class="about" id="about-me">
@@ -102,7 +109,8 @@
   </main>
   <footer class="footer">
     <p>&copy; 2026 Andrew Yancey. All rights reserved.</p>
-    <p class="footer-disclaimer">All brands, phone numbers, and other details shown in the displayed designs are fictional.</p>
+    <p class="footer-disclaimer">All brands, phone numbers, and other details shown in the displayed designs are
+      fictional.</p>
   </footer>
   <div class="overlay hidden" onclick="handleContactOverlayClick(event);">
     <div class="contact-box" role="dialog" aria-modal="true" aria-labelledby="contact-title">
@@ -115,7 +123,7 @@
         <label for="message">What kind of website do you need?</label>
         <textarea id="message" class="contact-field" name="message"></textarea>
         <div class="contact-buttons">
-          <input type="submit" id="submit" class="contact-button"/>
+          <input type="submit" id="submit" class="contact-button" />
           <button type="button" class="contact-button close-button" aria-label="Close Contact Form"
             onclick="hideContactBox();">Close</button>
         </div>
