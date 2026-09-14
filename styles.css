@@ -165,19 +165,52 @@ body {
     overflow: hidden;
 }
 
-.carousel-link:nth-child(1) {
+.carousel-next-pos {
     transform: translateX(-40%) scale(.80);
     z-index: 1;
 }
 
-.carousel-link:nth-child(2) {
+.carousel-active-pos {
     transform: translateX(0%) scale(1);
     z-index: 2;
 }
 
-.carousel-link:nth-child(3) {
+.carousel-previous-pos {
     transform: translateX(40%) scale(.80);
     z-index: 1;
+}
+
+.carousel-controls {
+    width: min(80%, 600px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.carousel-control {
+    background-color: var(--bg-color);
+    border: none;
+    height: 48px;
+    width: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.carousel-controls svg {
+    color: var(--accent-color);
+}
+
+.carousel-control svg {
+    height: 42px;
+    width: 42px;
+}
+
+.carousel-indicator {
+    height: 18px;
+    width: 18px;
 }
 
 @media (min-width: 1001px) {
@@ -188,17 +221,14 @@ body {
 }
 
 /* contact me modal */
-.overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 3;
-    background-color: rgba(0, 0, 0, .75);
+.contact-dialog {
+    padding: 0;
+    border: 0;
+    background: transparent;
+}
+
+.contact-dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.75);
 }
 
 .contact-box {
@@ -333,8 +363,8 @@ body {
         grid-template-columns: 50% 50%;
     }
 
-    .carousel-link:nth-child(1),
-    .carousel-link:nth-child(3) {
+    .carousel-next-pos,
+    .carousel-previous-pos {
         display: none;
     }
 
@@ -342,12 +372,12 @@ body {
         justify-items: center;
     }
 
-    .carousel-link:nth-child(2) {
+    .carousel-active-pos {
         width: 90vw;
         max-width: 480px;
     }
 
-    .carousel-link:nth-child(2) .carousel-image {
+    .carousel-active-pos .carousel-image {
         width: 100%;
         max-width: none;
     }

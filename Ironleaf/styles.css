@@ -16,7 +16,7 @@
 
 .hero {
     min-height: 100svh;
-    background-image: url("./Assets/bg.jpg");
+    background-image: url("./Assets/bg.webp");
     background-size: cover;
     background-position: center;
 }

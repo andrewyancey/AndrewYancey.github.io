@@ -7,12 +7,13 @@
 
   <meta name="description"
     content="Andrew Yancey builds fast, professional static websites for small businesses, personal brands, and startups.">
-  <meta name="canonical" href="https://www.andrewyancey.com/">
+  <link rel="canonical" href="https://www.andrewyancey.com/">
 
-  <meta name="og:title" content="Andrew Yancey | Web Developer">
-  <meta name="og:description" content="Fast, professional static websites for small businesses and personal brands.">
-  <meta name="og:type" content="website">
-  <meta name="og:url" content="https://www.andrewyancey.com/">
+  <meta property="og:title" content="Andrew Yancey | Web Developer">
+  <meta property="og:description"
+    content="Fast, professional static websites for small businesses and personal brands.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.andrewyancey.com/">
   <meta property="og:image" content="https://www.andrewyancey.com/Assets/preview.png">
 
   <title>Andrew Yancey | Web Developer</title>
@@ -48,22 +49,51 @@
   </header>
   <main>
     <section class="offer">
-      <h2 class="offer-title">Static websites built for only $50 a page</h2>
+      <h2 class="offer-title">Affordable websites built to solve your business problems</h2>
       <p class="offer-text">
-        Need a simple, fast website? I build clean, modern static websites for just $50 per page. Perfect for small
-        businesses, personal brands, and startups that need an online presence without the complexity or high cost. This
-        is a limited time offer while I expand my portfolio, so schedule your free consultation now!
+        A good website should do more than just look nice. I build clean, modern websites that help small businesses
+        answer common customer questions, clearly show their services, and make it easier for customers to call,
+        message, or request a quote. With straightforward pricing and no unnecessary complexity, you get a website that
+        works for your business instead of just taking up space online.
       </p>
-      <div class="carousel" >
-        <a href="./Ironshield/index.html" class="carousel-link">
-          <img src="./Assets/ironshield.PNG" class="carousel-image" alt="A picture of a pest control website" />
+      <div class="carousel">
+        <a href="./Ironshield/index.html" class="carousel-link carousel-next-pos">
+          <img src="./Assets/ironshield.webp" class="carousel-image" alt="A picture of a pest control website" />
         </a>
-        <a href="./Ironleaf/" class="carousel-link">
-          <img src="./Assets/landscaping.png" class="carousel-image" alt="A picture of a landscaping website" />
+        <a href="./Ironleaf/" class="carousel-link carousel-active-pos">
+          <img src="./Assets/landscaping.webp" class="carousel-image" alt="A picture of a landscaping website" />
         </a>
-        <a href="./Forge/" class="carousel-link">
-          <img src="./Assets/forge.png" class="carousel-image" alt="A picture of a development website" />
+        <a href="./Forge/" class="carousel-link carousel-previous-pos">
+          <img src="./Assets/forge.webp" class="carousel-image" alt="A picture of a development website" />
         </a>
+      </div>
+      <div class="carousel-controls">
+        <button class="carousel-control" id="carousel-next" type="button" aria-label="show next project">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+            class="bi bi-arrow-left-circle" viewBox="0 0 16 16" aria-hidden="true">
+            <path fill-rule="evenodd"
+              d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z" />
+          </svg>
+        </button>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="carousel-indicator"
+          viewBox="0 0 16 16">
+          <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="carousel-indicator"
+          viewBox="0 0 16 16">
+          <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="carousel-indicator"
+          viewBox="0 0 16 16">
+          <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+        </svg>
+        <button class="carousel-control" id="carousel-previous" type="button" aria-label="show previous project">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+            class="bi bi-arrow-right-circle" viewBox="0 0 16 16" aria-hidden="true">
+            <path fill-rule="evenodd"
+              d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z" />
+          </svg>
+        </button>
       </div>
     </section>
     <section class="about" id="about-me">
@@ -112,12 +142,13 @@
     <p class="footer-disclaimer">All brands, phone numbers, and other details shown in the displayed designs are
       fictional.</p>
   </footer>
-  <div class="overlay hidden" onclick="handleContactOverlayClick(event);">
-    <div class="contact-box" role="dialog" aria-modal="true" aria-labelledby="contact-title">
+  <dialog id="contact-dialog" class="contact-dialog" aria-labelledby="contact-title"
+    onclick="handleContactOverlayClick(event);">
+    <div class="contact-box">
       <form class="contact-me" action="https://formspree.io/f/mbdwzkzg" method="POST">
         <h2 id="contact-title">Let's get in touch!</h2>
         <label for="name">Name:</label>
-        <input type="text" id="name" class="contact-field" name="name" required />
+        <input type="text" id="name" class="contact-field" name="name" required autofocus />
         <label for="email">Email:</label>
         <input type="email" id="email" class="contact-field" name="email" required />
         <label for="message">What kind of website do you need?</label>
@@ -129,11 +160,14 @@
         </div>
       </form>
       <div class="thanks-box hidden">
-        <h2>Thank you for your submission!</h2>
+        <h2 id="success-title">Thank you for your submission!</h2>
         <p>I will be in touch soon.</p>
+        <button id="success-close" type="button" class="contact-button" onclick="hideContactBox();">
+          Close
+        </button>
       </div>
     </div>
-  </div>
+  </dialog>
   <script src="index.js"></script>
 </body>
 
